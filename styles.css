@@ -1,17 +1,23 @@
 html, body {
   font-family: Rajdhani, sans-serif;
   color: #343a40;
-  background: #FFF;
+  background: white;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 16px; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 600; }
 
 .muted {
   opacity: 0.5; }
+
+.pure-g [class*=pure-u] {
+  font-family: Rajdhani, sans-serif; }
 
 .pure-button.pure-button-outline {
   background: transparent;
@@ -67,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: space-between; }
     .header .header-content h1 {
-      font-weight: 600;
       text-align: center;
       text-transform: uppercase;
       font-size: 3rem;
       margin: 1rem 0;
       color: #FFF; }
     .header .header-content .header-buttons {
+      padding: 1rem;
       text-align: center; }
 
 .quote .avatar {
@@ -83,8 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%; }
 .quote h4 {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600; }
+  margin-bottom: 0.5rem; }
 
 .tile {
   padding: 0.5rem;
