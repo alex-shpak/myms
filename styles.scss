@@ -1,0 +1,181 @@
+$padding-1: 1px;
+$padding-4: .25rem;
+$padding-8: .5rem;
+$padding-16: 1rem;
+
+$font-size-12: .75rem;
+$font-size-14: .875rem;
+$font-size-16: 1rem;
+
+$size-48: 3rem;
+$size-56: 3.5rem;
+$size-72: 4.5rem;
+
+$body-background: #FFF;
+$body-font-color: #343a40;
+
+$color-accent: rgba(255,255,255,0.3);
+$color-discord: #738BD8;
+
+@mixin fill-parent() {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  font-family: Rajdhani, sans-serif;
+  color: $body-font-color;
+  background: $body-background;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.pure-button {
+  &.pure-button-outline {
+    background: transparent;
+    border: $padding-1 solid white;
+    border-radius: $padding-4;
+    color: white;
+
+    min-width: 8rem;
+
+    transition: ease-out 0.3s;
+    transition-property: border, background-color;
+
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
+}
+
+.box {
+  padding: $padding-16;
+  box-sizing: border-box;
+}
+
+// stack horizontal
+.flex-horizontal {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+// stack vertical
+.flex-vertical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: $padding-16;
+  padding-bottom: $padding-8;
+
+  .section-header {
+    margin-top: $padding-16 * 3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  height: 85%;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    @include fill-parent;
+    object-fit: cover;
+  }
+
+  .header-content {
+    @include fill-parent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin: $padding-16 0;
+      color: #FFF;
+    }
+  
+    .header-buttons {
+      text-align: center;
+    }
+  }
+}
+
+.quote {
+  .avatar {
+    height: $size-48;
+    width: $size-48;
+    margin: $padding-16;
+    border-radius: 50%;
+  }
+
+  h4 {
+    margin-top: $padding-16;
+    margin-bottom: $padding-8;
+    font-weight: 600;
+  }
+}
+
+.tile {
+  padding: $padding-8;
+  border-radius: $padding-4;
+  min-height: 10em;
+
+  transition: ease-out 0.3s;
+  transition-property: box-shadow, transform, box-shadow;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h3 {
+    margin: 0;
+    // text-align: right;
+  }
+
+  &:hover {
+    box-shadow: 0 $padding-4 $padding-8 rgba(0,0,0,0.75);
+    transform: scale(1.05);
+  }
+
+  &.planetside2 {
+    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg?v=1.0);
+  }
+  &.pubg {
+    background-image: url(https://vignette.wikia.nocookie.net/sons-of-nintendo/images/9/9e/Pubg.jpg/revision/latest?cb=20171012050532);
+  }
+  &.csgo {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/789666479176921142/7D7573D745B8E7A717A005B39775D0B25EC76893/);
+  }
+  &.overwatch {
+    background-image: url(http://hdqwalls.com/wallpapers/overwatch-game-all-heroes.jpg);
+  }
+  &.more {
+    color: #FFF;
+    background-color: #223;
+  }
+}

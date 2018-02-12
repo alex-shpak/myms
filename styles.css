@@ -1,0 +1,115 @@
+html, body {
+  font-family: Rajdhani, sans-serif;
+  color: #343a40;
+  background: #FFF;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+.muted {
+  opacity: 0.5; }
+
+.pure-button.pure-button-outline {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  color: white;
+  min-width: 8rem;
+  transition: ease-out 0.3s;
+  transition-property: border, background-color; }
+  .pure-button.pure-button-outline:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+.box {
+  padding: 1rem;
+  box-sizing: border-box; }
+
+.flex-horizontal {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row; }
+
+.flex-vertical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem; }
+  .section .section-header {
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase; }
+
+.header {
+  height: 85%;
+  overflow: hidden;
+  position: relative; }
+  .header video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .header .header-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .header .header-content h1 {
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin: 1rem 0;
+      color: #FFF; }
+    .header .header-content .header-buttons {
+      text-align: center; }
+
+.quote .avatar {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+  border-radius: 50%; }
+.quote h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600; }
+
+.tile {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  min-height: 10em;
+  transition: ease-out 0.3s;
+  transition-property: box-shadow, transform, box-shadow;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .tile h3 {
+    margin: 0; }
+  .tile:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.75);
+    transform: scale(1.05); }
+  .tile.planetside2 {
+    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg?v=1.0); }
+  .tile.pubg {
+    background-image: url(https://vignette.wikia.nocookie.net/sons-of-nintendo/images/9/9e/Pubg.jpg/revision/latest?cb=20171012050532); }
+  .tile.csgo {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/789666479176921142/7D7573D745B8E7A717A005B39775D0B25EC76893/); }
+  .tile.overwatch {
+    background-image: url(http://hdqwalls.com/wallpapers/overwatch-game-all-heroes.jpg); }
+  .tile.more {
+    color: #FFF;
+    background-color: #223; }
+
+/*# sourceMappingURL=styles.css.map */
