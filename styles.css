@@ -14,21 +14,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
 .muted {
-  opacity: 0.5; }
+  opacity: 0.75; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
 
 .pure-g [class*=pure-u] {
   font-family: Rajdhani, sans-serif; }
 
-.pure-button.pure-button-outline {
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  color: white;
-  min-width: 8rem;
-  transition: ease-out 0.3s;
-  transition-property: border, background-color; }
-  .pure-button.pure-button-outline:hover {
-    background-color: rgba(255, 255, 255, 0.3); }
+.pure-button {
+  font-weight: 600; }
+  .pure-button.pure-button-outline {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    color: white;
+    min-width: 8rem;
+    transition: ease-out 0.3s;
+    transition-property: border, background-color; }
+    .pure-button.pure-button-outline:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
 
 .box {
   padding: 1rem;
@@ -49,10 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .section {
+  margin-top: 1rem;
   padding-top: 1rem;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 1rem; }
   .section .section-header {
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase; }
 
@@ -73,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: space-between; }
     .header .header-content h1 {
+      text-shadow: -1px 0 2px rgba(0, 0, 0, 0.5);
       text-align: center;
       text-transform: uppercase;
       font-size: 3rem;
@@ -94,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 .tile {
   padding: 0.5rem;
   border-radius: 0.25rem;
-  min-height: 10em;
+  min-height: 10rem;
   transition: ease-out 0.3s;
   transition-property: box-shadow, transform, box-shadow;
   background-position: center;
@@ -103,18 +113,29 @@ h1, h2, h3, h4, h5, h6 {
   .tile h3 {
     margin: 0; }
   .tile:hover {
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
     transform: scale(1.05); }
   .tile.planetside2 {
     background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg?v=1.0); }
   .tile.pubg {
-    background-image: url(https://vignette.wikia.nocookie.net/sons-of-nintendo/images/9/9e/Pubg.jpg/revision/latest?cb=20171012050532); }
+    background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg); }
   .tile.csgo {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/789666479176921142/7D7573D745B8E7A717A005B39775D0B25EC76893/); }
+    background-image: url(https://vignette.wikia.nocookie.net/cswikia/images/5/50/Wiki-background/revision/latest?cb=20151023021401); }
   .tile.overwatch {
     background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg); }
   .tile.more {
     color: #FFF;
     background-color: #223; }
+
+.footer {
+  background: #343a40;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .footer .pure-menu-link {
+    color: #AAA;
+    background: none; }
+    .footer .pure-menu-link:hover {
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */
