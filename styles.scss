@@ -118,9 +118,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
 
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.33);
+
   video {
     @include fill-parent;
     object-fit: cover;
+    background: $body-font-color;
   }
 
   .header-content {
@@ -128,8 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    // background: linear-gradient(transparent, $body-background);
 
     h1 {
       text-shadow: -1px 0 2px rgba(0,0,0,0.5);
@@ -173,18 +174,13 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
 
-  h3 {
-    margin: 0;
-    // text-align: right;
-  }
-
   &:hover {
     box-shadow: 0 $padding-4 $padding-4 rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
   }
 
   &.planetside2 {
-    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg?v=1.0);
+    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg);
   }
   &.pubg {
     background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg);
@@ -195,14 +191,30 @@ h1, h2, h3, h4, h5, h6 {
   &.overwatch {
     background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg);
   }
+  &.arma3 {
+    background-image: url(https://cyberpowerpc.files.wordpress.com/2015/09/armhead2.jpg);
+  }
   &.more {
-    color: #FFF;
-    background-color: #223;
+    color: white;
+    background-image: url(https://bulk2.destructoid.com/ul/218043-GotYMainImage.jpg);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-weight: 300;
+      text-transform: uppercase;
+    }
   }
 }
 
 .footer {
-  background: $body-font-color;
+  background-color: $body-font-color;
+  background-image: url(media/tr-soldier.png);
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: right bottom;
+
   color: white;
   padding-top: $padding-16 * 2;
   padding-bottom: $padding-16 * 2;

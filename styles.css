@@ -68,12 +68,14 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   height: 85%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.33); }
   .header video {
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    background: #343a40; }
   .header .header-content {
     position: absolute;
     height: 100%;
@@ -110,25 +112,35 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .tile h3 {
-    margin: 0; }
   .tile:hover {
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
     transform: scale(1.05); }
   .tile.planetside2 {
-    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg?v=1.0); }
+    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg); }
   .tile.pubg {
     background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg); }
   .tile.csgo {
     background-image: url(https://vignette.wikia.nocookie.net/cswikia/images/5/50/Wiki-background/revision/latest?cb=20151023021401); }
   .tile.overwatch {
     background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg); }
+  .tile.arma3 {
+    background-image: url(https://cyberpowerpc.files.wordpress.com/2015/09/armhead2.jpg); }
   .tile.more {
-    color: #FFF;
-    background-color: #223; }
+    color: white;
+    background-image: url(https://bulk2.destructoid.com/ul/218043-GotYMainImage.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .tile.more h1 {
+      font-weight: 300;
+      text-transform: uppercase; }
 
 .footer {
-  background: #343a40;
+  background-color: #343a40;
+  background-image: url(media/tr-soldier.png);
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: right bottom;
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem; }
