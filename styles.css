@@ -5,7 +5,8 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  min-width: 400px; }
 
 html {
   font-size: 16px; }
@@ -26,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Rajdhani, sans-serif; }
 
 .pure-button {
-  font-weight: 600; }
+  font-weight: 600;
+  margin: 0.25rem; }
   .pure-button.pure-button-outline {
     background: transparent;
     border: 1px solid white;
@@ -92,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
       color: #FFF; }
     .header .header-content .header-buttons {
       padding: 1rem;
-      text-align: center; }
+      display: flex;
+      justify-content: center; }
 
 .quote .avatar {
   height: 3rem;
