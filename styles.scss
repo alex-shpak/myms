@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+ol {
+  padding-left: 1rem;
+}
+
 .muted {
   opacity: 0.75;
 }
@@ -104,12 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  margin-top: $padding-16;
-  padding-top: $padding-16;
+  background: #FFF;
+
+  padding-top: $padding-16 * 2;
   padding-bottom: $padding-16;
 
   .section-header {
-    margin-top: $padding-16;
     text-align: center;
     text-transform: uppercase;
   }
@@ -165,6 +169,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.notch {
+  height: $size-72 * 4;
+  box-shadow: inset 0px 0px 1rem rgba(0,0,0,0.25);
+
+  .notch-banner {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  
+    z-index: -1;
+    
+    background: url(media/notch.jpg);
+    background-size: cover;
+    background-position: center;
+  
+    opacity: 0.8;
+  }
+}
+
 .tile {
   padding: $padding-8;
   border-radius: $padding-4;
@@ -183,23 +207,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &.planetside2 {
-    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg);
+    // background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg);
+    background-image: url(media/games/ps2.jpg)
   }
   &.pubg {
-    background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg);
+    // background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg);
+    background-image: url(media/games/pubg.jpg)
   }
   &.csgo {
-    background-image: url(https://vignette.wikia.nocookie.net/cswikia/images/5/50/Wiki-background/revision/latest?cb=20151023021401);
+    // background-image: url(https://vignette.wikia.nocookie.net/cswikia/images/5/50/Wiki-background/revision/latest?cb=20151023021401);
+    background-image: url(media/games/csgo.jpg)
   }
   &.overwatch {
-    background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg);
+    // background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg);
+    background-image: url(media/games/overwatch.jpg)
   }
   &.arma3 {
-    background-image: url(https://cyberpowerpc.files.wordpress.com/2015/09/armhead2.jpg);
+    // background-image: url(https://cyberpowerpc.files.wordpress.com/2015/09/armhead2.jpg);
+    background-image: url(media/games/arma3.jpg)
   }
   &.more {
     color: white;
-    background-image: url(https://bulk2.destructoid.com/ul/218043-GotYMainImage.jpg);
+    // background-image: url(https://bulk2.destructoid.com/ul/218043-GotYMainImage.jpg);
+    background-image: url(media/games/etc.jpg);
     
     display: flex;
     align-items: center;

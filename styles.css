@@ -14,6 +14,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
+ol {
+  padding-left: 1rem; }
+
 .muted {
   opacity: 0.75; }
 
@@ -59,11 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
 .section {
-  margin-top: 1rem;
-  padding-top: 1rem;
+  background: #FFF;
+  padding-top: 2rem;
   padding-bottom: 1rem; }
   .section .section-header {
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase; }
 
@@ -106,6 +108,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
 
+.notch {
+  height: 18rem;
+  box-shadow: inset 0px 0px 1rem rgba(0, 0, 0, 0.25); }
+  .notch .notch-banner {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background: url(media/notch.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; }
+
 .tile {
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -119,18 +135,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
     transform: scale(1.05); }
   .tile.planetside2 {
-    background-image: url(https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/006/943.jpg); }
+    background-image: url(media/games/ps2.jpg); }
   .tile.pubg {
-    background-image: url(https://images4.alphacoders.com/827/thumb-1920-827439.jpg); }
+    background-image: url(media/games/pubg.jpg); }
   .tile.csgo {
-    background-image: url(https://vignette.wikia.nocookie.net/cswikia/images/5/50/Wiki-background/revision/latest?cb=20151023021401); }
+    background-image: url(media/games/csgo.jpg); }
   .tile.overwatch {
-    background-image: url(https://avante.biz/wp-content/uploads/Overwatch-Wallpapers/Overwatch-Wallpapers-001.jpg); }
+    background-image: url(media/games/overwatch.jpg); }
   .tile.arma3 {
-    background-image: url(https://cyberpowerpc.files.wordpress.com/2015/09/armhead2.jpg); }
+    background-image: url(media/games/arma3.jpg); }
   .tile.more {
     color: white;
-    background-image: url(https://bulk2.destructoid.com/ul/218043-GotYMainImage.jpg);
+    background-image: url(media/games/etc.jpg);
     display: flex;
     align-items: center;
     justify-content: center; }
