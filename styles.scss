@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ol {
-  padding-left: 1rem;
+  padding-left: $padding-16;
 }
 
 .muted {
@@ -171,7 +171,7 @@ ol {
 
 .notch {
   height: $size-72 * 4;
-  box-shadow: inset 0px 0px 1rem rgba(0,0,0,0.25);
+  box-shadow: inset 0px 0px $padding-16 rgba(0,0,0,0.25);
 
   .notch-banner {
     height: 100%;
@@ -184,8 +184,6 @@ ol {
     background: url(media/notch.jpg);
     background-size: cover;
     background-position: center;
-  
-    opacity: 0.8;
   }
 }
 
@@ -245,12 +243,10 @@ ol {
   background-color: $body-font-color;
   background-image: url(media/tr-soldier.png);
   background-repeat: no-repeat;
-  background-size: 15rem;
+  background-size: 14rem;
   background-position: right bottom;
 
   color: white;
-  padding-top: $padding-16 * 2;
-  padding-bottom: $padding-16 * 2;
   
   .pure-menu-link {
     color: #AAA;

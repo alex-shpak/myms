@@ -119,8 +119,7 @@ ol {
     z-index: -1;
     background: url(media/notch.jpg);
     background-size: cover;
-    background-position: center;
-    opacity: 0.8; }
+    background-position: center; }
 
 .tile {
   padding: 0.5rem;
@@ -158,11 +157,9 @@ ol {
   background-color: #343a40;
   background-image: url(media/tr-soldier.png);
   background-repeat: no-repeat;
-  background-size: 15rem;
+  background-size: 14rem;
   background-position: right bottom;
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  color: white; }
   .footer .pure-menu-link {
     color: #AAA;
     background: none; }
