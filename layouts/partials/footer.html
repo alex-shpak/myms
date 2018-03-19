@@ -1,0 +1,52 @@
+<!-- Footer -->
+<div class="section footer">
+  <div class="pure-g content">
+    <div class="pure-u-1 pure-u-md-1-4 box">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-heading">
+          Myrmidons United
+        </li>
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link">Home</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="{{ .Params.discordUrl }}" target="_blank" class="pure-menu-link">Discord</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-4 box">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-heading">
+          Links
+        </li>
+        <li class="pure-menu-item">
+          <a href="#about" class="pure-menu-link">Who are Myrmidons</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#rules" class="pure-menu-link">Outfit rules</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#communication" class="pure-menu-link">Communication</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="#games" class="pure-menu-link">We play</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-4 box">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-heading">
+          Media
+        </li>
+        {{ range .Params.media }}
+        <li class="pure-menu-item">
+          <a href="{{ .url }}" target="_blank" class="pure-menu-link">{{ .title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-4 box">
+
+    </div>
+  </div>
+</div>

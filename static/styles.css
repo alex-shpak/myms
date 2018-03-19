@@ -1,0 +1,178 @@
+html, body {
+  font-family: Rajdhani, sans-serif;
+  color: #343a40;
+  background: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 400px; }
+
+html {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+ol {
+  padding-left: 1rem; }
+
+.muted {
+  opacity: 0.75; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.pure-g.block {
+  display: block; }
+
+.pure-g [class*=pure-u] {
+  font-family: Rajdhani, sans-serif; }
+
+.pure-button {
+  font-weight: 600;
+  margin: 0.25rem;
+  min-width: 10rem;
+  border-radius: 0.25rem;
+  transition: ease-out 0.3s;
+  transition-property: border, background-color; }
+  .pure-button.pure-button-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white; }
+    .pure-button.pure-button-outline:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .pure-button.discord {
+    background: #738BD8;
+    color: white; }
+    .pure-button.discord:hover {
+      background-color: #5f7ad2; }
+
+.badge {
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0; }
+  .badge img {
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
+
+.box {
+  padding: 1rem;
+  box-sizing: border-box; }
+
+.flex-horizontal {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row; }
+
+.flex-vertical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.section {
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .section .section-header {
+    text-align: center;
+    text-transform: uppercase; }
+
+.header {
+  height: 85%;
+  overflow: hidden;
+  position: relative; }
+  .header video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: #343a40; }
+  .header .header-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .header .header-content h1 {
+      text-shadow: -1px 0 2px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin: 1rem 0;
+      color: #FFF; }
+    .header .header-content .header-buttons {
+      padding: 1rem;
+      display: flex;
+      justify-content: center; }
+
+@media screen and (min-width: 48em) {
+  .card {
+    background: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem; }
+    .card.left {
+      margin-left: 1rem;
+      margin-right: -1rem; }
+    .card.right {
+      margin-top: 3.5rem; } }
+.notch {
+  height: 18rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.25); }
+  .notch .notch-banner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(media/notch.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.tile {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  min-height: 10rem;
+  transition: ease-out 0.3s;
+  transition-property: box-shadow, transform, box-shadow;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .tile:hover {
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.33);
+    transform: scale(1.05); }
+  .tile.more {
+    color: white;
+    background-image: url(media/games/etc.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .tile.more h1 {
+      font-weight: 300;
+      text-transform: uppercase; }
+
+.footer {
+  background-color: #343a40;
+  background-image: url(media/tr-soldier.png);
+  background-repeat: no-repeat;
+  background-size: 14rem;
+  background-position: right bottom;
+  color: white; }
+  .footer .pure-menu-link {
+    color: #ababab;
+    background: none; }
+    .footer .pure-menu-link:hover {
+      color: white; }
+
+/*# sourceMappingURL=styles.css.map */

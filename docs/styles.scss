@@ -1,0 +1,271 @@
+$padding-1: 1px;
+$padding-4: .25rem;
+$padding-8: .5rem;
+$padding-16: 1rem;
+
+$font-size-12: .75rem;
+$font-size-14: .875rem;
+$font-size-16: 1rem;
+
+$size-48: 3rem;
+$size-56: 3.5rem;
+$size-72: 4.5rem;
+
+$body-background: white;
+$body-font-color: #343a40;
+
+$color-discord: #738BD8;
+
+@mixin fill-parent() {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin break-md {
+  @media screen and (min-width: 48em) {
+    @content;
+  }
+}
+
+html, body {
+  font-family: Rajdhani, sans-serif;
+  color: $body-font-color;
+  background: $body-background;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+ol {
+  padding-left: $padding-16;
+}
+
+.muted {
+  opacity: 0.75;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.pure-g.block {
+  display: block;
+}
+
+.pure-g [class*=pure-u] {
+  font-family: Rajdhani, sans-serif;
+}
+
+.pure-button {
+  font-weight: 600;
+  margin: $padding-4;
+  min-width: 10rem;
+  border-radius: $padding-4;
+  
+  transition: ease-out 0.3s;
+  transition-property: border, background-color;
+
+  &.pure-button-outline {
+    background: transparent;
+    border: $padding-1 solid $body-background;
+    
+    color: $body-background;
+    
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+
+  &.discord {
+    background: $color-discord;
+    color: $body-background;
+
+    &:hover {
+      background-color: darken($color-discord, 5%);
+    }
+  }
+}
+
+.badge {
+  height: 1.75rem;
+
+  display: flex;
+  align-items: center;
+
+  margin: $padding-8 0;
+
+  img {
+    height: 100%;
+    border-radius: 50%;
+    margin-right: $padding-8;
+  }
+}
+
+.box {
+  padding: $padding-16;
+  box-sizing: border-box;
+}
+
+// stack horizontal
+.flex-horizontal {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+// stack vertical
+.flex-vertical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section {
+  background: $body-background;
+
+  padding-top: $padding-16 * 2;
+  padding-bottom: $padding-16 * 2;
+
+  .section-header {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  height: 85%;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    @include fill-parent;
+    object-fit: cover;
+    background: $body-font-color;
+  }
+
+  .header-content {
+    @include fill-parent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      text-shadow: -1px 0 2px rgba(0,0,0,0.5);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin: $padding-16 0;
+      color: #FFF;
+    }
+  
+    .header-buttons {
+      padding: $padding-16;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include break-md {
+  .card {
+    background: $body-background;
+    box-shadow: 0 $padding-8 $padding-16 rgba(0, 0, 0, 0.2);
+    padding: $padding-16 $padding-16 * 2;
+
+    &.left {
+      margin-left: $padding-16;
+      margin-right: -$padding-16;
+    }
+
+    &.right {
+      margin-top: $size-56;
+    }
+  }
+}
+
+.notch {
+  height: $size-72 * 4;
+  box-shadow: inset 0 0 $padding-16 rgba(0,0,0,0.25);
+
+  .notch-banner {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+  
+    z-index: -1;
+    
+    background: url(media/notch.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.tile {
+  padding: $padding-8;
+  border-radius: $padding-4;
+  min-height: 10rem;
+
+  transition: ease-out 0.3s;
+  transition-property: box-shadow, transform, box-shadow;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    box-shadow: 0 $padding-4 $padding-4 rgba(0, 0, 0, 0.33);
+    transform: scale(1.05);
+  }
+
+  &.more {
+    color: $body-background;
+    background-image: url(media/games/etc.jpg);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer {
+  background-color: $body-font-color;
+  background-image: url(media/tr-soldier.png);
+  background-repeat: no-repeat;
+  background-size: 14rem;
+  background-position: right bottom;
+
+  color: $body-background;
+  
+  .pure-menu-link {
+    color: darken($body-background, 33%);
+    background: none;
+
+    &:hover {
+      color: $body-background;
+    }
+  }
+}

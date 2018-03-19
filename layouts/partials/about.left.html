@@ -1,0 +1,30 @@
+<p>
+  <strong>Myrmidons United</strong> is a English-speaking gaming community centered around Planetside 2. Primary faction of the outfit
+  is Terran Republic (TR) on the server Miller, with focus on Combined Arms Tactical Gameplay.
+</p>
+
+<div class="pure-g">
+
+  <div class="pure-u-1-2">
+    <strong>Leaders</strong>
+    <div>
+      {{ range .Params.leaders }}
+      <span class="badge">
+        <img src="{{ .avatar }}" /> {{ .name }}
+      </span>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="pure-u-1-2">
+    <strong>Officers</strong>
+    <div>
+      {{ range .Params.officers }}
+      <span class="badge">
+        <img src="{{ .avatar }}" /> {{ .name }}
+      </span>
+      {{ end }}
+    </div>
+  </div>
+
+</div>
