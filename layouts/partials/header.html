@@ -1,15 +1,14 @@
-<div class="header">
+<div class="background">
   <video autoplay loop muted preload="metadata">
     <!-- https://www.youtube.com/watch?v=_VxeI0T_Xsg -->
     <source src="{{ .Params.headerVideo }}" type="video/mp4">
   </video>
-
-  <div class="header-content box">
-    <h1><span class="muted">[MyMs]</span> Myrmidons United</h1>
-    <div class="header-buttons">
-      <a class="pure-button pure-button-outline" href="#" disabled>Sign Up</a>
-      <a class="pure-button pure-button-outline" href="#" disabled>Forum</a>
-      <a class="pure-button pure-button-outline" href="{{ .Params.discordUrl }}" target="_blank">Discord</a>
-    </div>
+</div>
+<div class="header box">
+  <h1><span class="muted">[MyMs]</span> Myrmidons United</h1>
+  <div class="text-center">
+    <a class="pure-button pure-button-outline" href="#" disabled>Sign Up</a>
+    <a class="pure-button pure-button-outline" href="#" disabled>Forum</a>
+    <a class="pure-button pure-button-outline" href="{{ .Params.discordUrl }}" target="_blank">Discord</a>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 discordUrl: https://discord.gg/hvVfDKF
 discordWidget: https://discordapp.com/widget?id=239498506799153155&theme=dark
-headerVideo: media/ps2.mp4
+headerVideo: media/myms.mp4
 
 leaders:
   - name: Kimpumomo
