@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://myrmidonsunited.com/</loc>
+    <loc>https://alex-shpak.github.io/myms/</loc>
   </url>
   
   <url>
-    <loc>http://myrmidonsunited.com/categories/</loc>
+    <loc>https://alex-shpak.github.io/myms/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://myrmidonsunited.com/tags/</loc>
+    <loc>https://alex-shpak.github.io/myms/tags/</loc>
     <priority>0</priority>
   </url>
   
