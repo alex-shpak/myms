@@ -30,8 +30,7 @@ ol {
   text-align: justify; }
 
 .pure-g.block {
-  display: block;
-  overflow: hidden; }
+  display: block; }
 
 .pure-g [class*=pure-u] {
   font-family: Rajdhani, sans-serif; }
@@ -75,6 +74,7 @@ ol {
 
 .section {
   background: white;
+  overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 2rem; }
   .section .section-header {

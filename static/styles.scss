@@ -64,7 +64,6 @@ ol {
 
 .pure-g.block {
   display: block;
-  overflow: hidden;
 }
 
 .pure-g [class*=pure-u] {
@@ -127,6 +126,7 @@ ol {
 
 .section {
   background: $body-background;
+  overflow: hidden;
 
   padding-top: $padding-16 * 2;
   padding-bottom: $padding-16 * 2;
