@@ -13,6 +13,9 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #343a40;
+    text-decoration: none; }
 
 ol {
   padding-left: 1rem; }
@@ -32,6 +35,10 @@ ol {
 
 .pure-g [class*=pure-u] {
   font-family: Rajdhani, sans-serif; }
+
+.box {
+  padding: 1rem;
+  box-sizing: border-box; }
 
 .pure-button {
   font-weight: 600;
@@ -62,20 +69,6 @@ ol {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
-.box {
-  padding: 1rem;
-  box-sizing: border-box; }
-
-.flex-horizontal {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row; }
-
-.flex-vertical {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column; }
-
 .content {
   max-width: 1024px;
   margin: 0 auto; }
@@ -103,17 +96,14 @@ ol {
 
 .header {
   height: 85%;
-  overflow: hidden;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .header h1 {
     text-shadow: -1px 0 2px rgba(0, 0, 0, 0.5);
-    text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     color: #FFF; }
 
 @media screen and (min-width: 48em) {

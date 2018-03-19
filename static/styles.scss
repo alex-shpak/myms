@@ -39,6 +39,11 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
+
+  a {
+    color: $body-font-color;
+    text-decoration: none;
+  }
 }
 
 ol {
@@ -64,6 +69,11 @@ ol {
 
 .pure-g [class*=pure-u] {
   font-family: Rajdhani, sans-serif;
+}
+
+.box {
+  padding: $padding-16;
+  box-sizing: border-box;
 }
 
 .pure-button {
@@ -110,25 +120,6 @@ ol {
   }
 }
 
-.box {
-  padding: $padding-16;
-  box-sizing: border-box;
-}
-
-// stack horizontal
-.flex-horizontal {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-// stack vertical
-.flex-vertical {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
 .content {
   max-width: 1024px;
   margin: 0 auto;
@@ -164,19 +155,15 @@ ol {
 
 .header {
   height: 85%;
-  overflow: hidden;
-  position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   h1 {
     text-shadow: -1px 0 2px rgba(0,0,0,0.5);
-    text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
-    margin: $padding-16 0;
+    margin: $padding-8 0;
     color: #FFF;
   }
 }

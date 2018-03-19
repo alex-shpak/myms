@@ -8,6 +8,8 @@ leaders:
     avatar: https://cdn.discordapp.com/avatars/143412978652282880/77189482a7a31605538f6c653a7f003c.png
   - name: themadkosovan
     avatar: https://cdn.discordapp.com/avatars/174184729095045121/55a1a95c1b24701f663fc3bbe7a5c58a.png
+  - name: Wek3nTR
+    avatar: https://cdn.discordapp.com/avatars/238617700459479040/dd63aa7e31cfb918a5cc115c1918f1ed.png
   - name: Frostbite
     avatar: https://cdn.discordapp.com/avatars/199543416168644609/df2cf9d1fcbf4a68c6942eef65ddc175.png
 
