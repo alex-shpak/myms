@@ -1,3 +1,4 @@
 baseUrl: https://alex-shpak.github.io/myms/
 disableRSS: true
 publishdir: docs
+taxonomies: false

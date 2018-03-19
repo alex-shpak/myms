@@ -27,7 +27,8 @@ ol {
   text-align: justify; }
 
 .pure-g.block {
-  display: block; }
+  display: block;
+  overflow: hidden; }
 
 .pure-g [class*=pure-u] {
   font-family: Rajdhani, sans-serif; }
@@ -120,9 +121,10 @@ ol {
   .card {
     background: white;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    margin: 1rem 0; }
     .card.left {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       margin-right: -1rem; }
     .card.right {
       margin-top: 3.5rem; } }

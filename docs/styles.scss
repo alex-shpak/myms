@@ -65,6 +65,7 @@ ol {
 
 .pure-g.block {
   display: block;
+  overflow: hidden;
 }
 
 .pure-g [class*=pure-u] {
@@ -191,9 +192,10 @@ ol {
     background: $body-background;
     box-shadow: 0 $padding-8 $padding-16 rgba(0, 0, 0, 0.2);
     padding: $padding-16 $padding-16 * 2;
+    margin: $padding-16 0;
 
     &.left {
-      margin-left: $padding-16;
+      margin-left: $padding-16 / 2;
       margin-right: -$padding-16;
     }
 

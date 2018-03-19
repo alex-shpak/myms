@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="AOS.init()">
   {{ partial "header.html" . }}
   {{ partial "about.html" . }}
   {{ partial "communication.html" . }}
@@ -30,7 +30,5 @@
   {{ partial "games.html" . }}
 
   {{ partial "footer.html" . }}
-
-  <script>AOS.init();</script>
 </body>
 </html>

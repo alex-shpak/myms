@@ -6,14 +6,4 @@
     <loc>https://alex-shpak.github.io/myms/</loc>
   </url>
   
-  <url>
-    <loc>https://alex-shpak.github.io/myms/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alex-shpak.github.io/myms/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
 </urlset>
